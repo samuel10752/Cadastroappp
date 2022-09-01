@@ -19,7 +19,7 @@
     <ion-item>
       <ion-label position="floating"> Email:</ion-label>
       <ion-input [(ngModel)]="cliente.email" formControlName="email"></ion-input>
-      <smail class="error" *ngIf="(clienteForm.get('email').errors?.required || clienteForm.get('email').errors?.email) && form.submitted" >Email invalido, Informa um email@teste </smail>
+      <small class="error" *ngIf="(clienteForm.get('email').errors?.required || clienteForm.get('email').errors?.email) && form.submitted" >Email invalido, Informa um email@teste </small>
     </ion-item>
 
     <ion-button type="submit">Confirmar</ion-button>
